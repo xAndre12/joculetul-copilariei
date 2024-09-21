@@ -17,43 +17,43 @@ const randomImage = () => {
     }
     setTimeout(() => {
         if(npcPick.includes(myPick)){
-            rezultat.innerHTML = "Remiza";
+            rezultat.innerHTML = "Draw";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "Foarfeca" && npcPick.includes("Hartie")){
-            rezultat.innerHTML = "Ai castigat";
+            rezultat.innerHTML = "You won";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "Hartie" && npcPick.includes("piatra")){
-            rezultat.innerHTML = "Ai castigat";
+            rezultat.innerHTML = "You won";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "piatra" && npcPick.includes("Foarfeca")){
-            rezultat.innerHTML = "Ai castigat";
+            rezultat.innerHTML = "You won";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "Hartie" && npcPick.includes("Foarfeca")){
-            rezultat.innerHTML = "Ai pierdut";
+            rezultat.innerHTML = "You lose";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "piatra" && npcPick.includes("Hartie")){
-            rezultat.innerHTML = "Ai pierdut";
+            rezultat.innerHTML = "You lose";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
         }
         if(myPick == "Foarfeca" && npcPick.includes("piatra")){
-            rezultat.innerHTML = "Ai pierdut";
+            rezultat.innerHTML = "You lose";
             setTimeout(()=>{
                 rezultat.innerHTML=" ";
             },1000)
